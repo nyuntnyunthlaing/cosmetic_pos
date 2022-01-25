@@ -6,7 +6,7 @@
           <div class="card-header page-title">About Us Component</div>
 
           <div class="card-body body-content">
-            Hi, Online Web tutor. I am About Us Page
+            Hi, GIC Members. I am About Us Page
           </div>
         </div>
       </div>
