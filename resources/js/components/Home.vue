@@ -43,27 +43,26 @@
           >
         </template>
       </b-carousel-slide>
-
-    
     </b-carousel>
-
-
 <ProductListComponents />
 
+<br/>
+<br/>
+<FooterComponent/>
     
 </div>
-
-
-
 </template>
 <script>
 import Navbar from './Navbar.vue';
 import ProductListComponents from './ProductListComponents.vue';
+import FooterComponent from './FooterComponent.vue';
+
   export default {
       components: {
     
     Navbar,
     ProductListComponents,
+    FooterComponent,
 
   },
     data() {
