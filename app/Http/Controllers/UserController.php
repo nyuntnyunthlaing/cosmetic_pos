@@ -122,10 +122,7 @@ class UserController extends Controller
 
         $user->save();
 
-        return response()->json('ok',200);
-
-        
-
+        return response()->json('ok',200);  
       
     }
 
@@ -187,6 +184,25 @@ class UserController extends Controller
         $user->delete();
 
         return response()->json('ok', 200);
+    }
+
+    public function search(Request $request){
+
+        $searchWord = $request->get('s');
+        $users = User::where(function($query) use ($searchWord){
+            $query->where('name', 'LIKE', "%$searchWord%")
+            ->orWhere('email', 'LIKE', "%$searchWord%");
+        })->latest()->get();
+
+        $users->transform(function($user){
+            $user->role = $user->getRoleNames()->first();
+            return $user;
+        });
+
+        return response()->json([
+            'users' => $users
+        ], 200);
+        
     }
 
    
