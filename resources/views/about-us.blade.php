@@ -13,7 +13,7 @@
 
         <div id="app">
             
-            <about-us />
+            <about-us></about-us>
 
         </div>
         
