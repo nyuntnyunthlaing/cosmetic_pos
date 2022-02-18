@@ -17,6 +17,11 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
+Route::get('{any}', function () {
+
+    return view('Home');
+
+})->where('any', '.*');
 
 Route::group(['middleware' => 'auth'], function() {
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -25,6 +30,7 @@ Route::group(['middleware' => 'auth'], function() {
 
 
     Route::resource('role', 'App\Http\Controllers\RoleController');
+    Route::resource('Home', 'App\Http\Controllers\HomeController');
 
 
 
