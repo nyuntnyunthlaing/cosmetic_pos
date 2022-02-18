@@ -6,6 +6,8 @@
 
         <title>Vue Js Page</title>
 
+        <p> This is the about as </p>
+
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
     </head>
