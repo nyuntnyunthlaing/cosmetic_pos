@@ -1,0 +1,51 @@
+#admin-menu {
+    background-color: rgb(63, 70, 78) !important;
+    height: 100vh;
+}
+.nav-link {
+    color: rgb(236, 121, 14) !important;
+    font-family: sans-serif !important;
+    margin: 0 auto;
+}
+
+.nav-link:hover {
+    background: rgba(208, 208, 214, 0.37) !important;
+}
+.nav-link:focus {
+    background: rgba(226, 215, 115, 0.37) !important;
+}
+
+.admin-main-menu {
+    width: 20%;
+    float: left;
+}
+
+.admin-content {
+    width: 80%;
+    float: right;
+}
+
+.admin-content-hide {
+    width: 100%;
+    float: left;
+}
+
+.admin-imgSection {
+    height: 80px;
+    margin: 0px 0px 20px 0px;
+    text-align: center;
+    color: white;
+    font-family: sans-serif !important;
+    font-weight: 1000;
+    vertical-align: middle;
+    padding: 30px !important;
+    background-color: rgba(68, 51, 51);
+}
+
+.admin-card {
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    margin: 20px !important;
+}
+
